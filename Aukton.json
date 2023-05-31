@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Auction",
+  "description": "A product from Acme'scatalog",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The uniqueidentifierfor a product",
+      "type": "string"
+    },
+    "StartTime": {
+      "description": "When Action get start",
+      "type": "string"
+    },
+    "EndTime": {
+        "description": "When Action get End",
+        "type": "string"
+      },
+    "StartingPrice": {
+        "description": "Starting price for Auction",
+        "type": "number"
+    },
+    "CurrentPrice": {
+        "description": "Current price for Auction",
+        "type": "number"
+      },
+      "Bidhistory": {
+        "description": "Hostory of the alle bids",
+        "type": "array" 
+      }
+
+  },
+  "required": ["id", "starttime","endtime", "startprice","currentprice", "bidhistory"]
+}

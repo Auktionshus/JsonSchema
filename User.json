@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Auction",
+    "description": "A product from Acme'scatalog",
+    "type": "object",
+    "properties": {
+      "id": {
+        "description": "The uniqueidentifierfor a product",
+        "type": "string"
+      },
+      "FirstName": {
+        "description": "The user first name",
+        "type": "string"
+      },
+      "LastName": {
+          "description": "The user last name",
+          "type": "string"
+        },
+      "Email": {
+          "description": "The user email adress",
+          "type": "string"
+      },
+      "PasswordHash": {
+          "description": "The user password get hashing",
+          "type": "string"
+        },
+        "PasswordSalt": {
+          "description": "The user password get salt",
+          "type": "string" 
+        },
+        "MobileNuber": {
+            "description": "The user mobile number", 
+            "type": "integer"
+        }
+  
+    },
+    "required": ["id", "firstname", "lastname", "email", "passwordhash", "passwordsalt", "mobilenuber"]
+  }

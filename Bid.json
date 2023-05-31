@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Bid",
+  "description": "A product from Acme'scatalog",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The uniqueidentifierfor a product",
+      "type": "string"
+    },
+    "Bider": {
+      "description": "The uder who bid on Auction",
+      "type": "object"
+    },
+    "Aumont": {
+      "description": "Price of current bid",
+      "type": "number"
+    },
+    "Date": {
+      "description": "date of the bid",
+      "type": "string"
+    }
+  },
+  "required": ["id", "bider", "amount", "date"]
+}

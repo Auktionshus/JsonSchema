@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Auction",
+    "description": "A product from Acme'scatalog",
+    "type": "object",
+    "properties": {
+      "id": {
+        "description": "The uniqueidentifierfor a product",
+        "type": "string"
+      },
+      "Title": {
+        "description": "The title of item",
+        "type": "string"
+      },
+      "Brand": {
+          "description": "The brand of the item",
+          "type": "string"
+        },
+      "Description": {
+          "description": "The description of the time",
+          "type": "string"
+      },
+      "StartingPrice": {
+          "description": "The starting price of item",
+          "type": "number"
+        },
+        "ImageFileId": {
+          "description": "The item has an image which gets an id",
+          "type": "string" 
+        },
+        "Category":{
+            "description": "Category of item",
+            "type": "string"
+        },
+        "Location":{
+            "description": "Where item is located",
+            "type": "string"
+        },
+        "User": {
+            "description": "The user of the Item", 
+            "type": "string"
+        }
+  
+    },
+    "required": ["id", "title", "brand", "description", "startingprice", "imagefileid", "category", "located", "user"]
+  }
