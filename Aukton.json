@@ -8,27 +8,38 @@
       "description": "The uniqueidentifierfor a product",
       "type": "string"
     },
-    "StartTime": {
-      "description": "When Action get start",
+    "Item": {
+      "description": "The name of the item",
       "type": "string"
     },
-    "EndTime": {
-        "description": "When Action get End",
+    "HighsteBider": {
+        "description": "An object of user who give the highst bid",
         "type": "string"
       },
-    "StartingPrice": {
-        "description": "Starting price for Auction",
-        "type": "number"
+    "Bids": {
+        "description": "array of bids",
+        "type": "array"
     },
     "CurrentPrice": {
         "description": "Current price for Auction",
         "type": "number"
       },
-      "Bidhistory": {
-        "description": "Hostory of the alle bids",
-        "type": "array" 
+      "starttime": {
+        "description": "the start time of the auction",
+        "type": "string" 
+      },
+      "endtime": {
+        "description": "the end time of the auction",
+        "type": "string"
+      },
+      "startingprice": {
+        "description": "the start price of the auction",
+        "type": "number"
+      },
+      "currentprice": {
+        "description": "the currentprice of the auction",
+        "type": "number"
       }
-
   },
   "required": ["id", "starttime","endtime", "startprice","currentprice", "bidhistory"]
 }

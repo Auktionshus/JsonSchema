@@ -8,31 +8,30 @@
         "description": "The uniqueidentifierfor a product",
         "type": "string"
       },
-      "FirstName": {
-        "description": "The user first name",
-        "type": "string"
+      "Seller": {
+        "description": "The seller of the product",
+        "type": "object"
       },
-      "LastName": {
-          "description": "The user last name",
-          "type": "string"
-        },
-      "Email": {
-          "description": "The user email adress",
+      "Title": {
+          "description": "The title of the product",
           "type": "string"
       },
-      "PasswordHash": {
-          "description": "The user password get hashing",
+      "Brand": {
+          "description": "The brand of the product",
           "type": "string"
         },
-        "PasswordSalt": {
-          "description": "The user password get salt",
+        "Description": {
+          "description": "The description of the product",
           "type": "string" 
         },
-        "MobileNuber": {
-            "description": "The user mobile number", 
-            "type": "integer"
+        "Category": {
+            "description": "category of the product", 
+            "type": "object"
+        }, 
+        "Location":{
+          "description": "location of the product", 
+          "type": "string"
         }
-  
     },
     "required": ["id", "firstname", "lastname", "email", "passwordhash", "passwordsalt", "mobilenuber"]
   }
