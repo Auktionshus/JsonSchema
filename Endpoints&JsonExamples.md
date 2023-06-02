@@ -5,7 +5,7 @@
 ### Endpoint
 
 Post an auction
-this is the endpoint: (POST) https://localhost/4000/api/auction/create
+this is the endpoint: (POST) http://localhost/4000/api/auction/create
 Json Example for posting
 {
     "Item": "139c132e-6fd5-44b8-a543-55aaddf71080",
@@ -15,13 +15,13 @@ Json Example for posting
 }
 
 Get a list of auctions
-[this is the endpoint](https://localhost/4000/api/auction/list)
+this is the endpoint (GET) http://localhost/4000/api/auction/list
 
 Get an auction from id
-[this is the endpoint](https://localhost/4000/api/auction/{id})
+this is the endpoint (GET) http://localhost/4000/api/auction/{id}
 
 Get Version
-[this is the endpoint](https://localhost/4000/api/auction/version)
+this is the endpoint (GET) http://localhost/4000/api/auction/version
 
 # BidService
 
@@ -30,7 +30,7 @@ Get Version
 ### Endpoint
 
 Post a Bid
-[this is the endpoint](https://localhost/4000/api/bid/create)
+this is the endpoint (POST) http://localhost/4000/api/bid/create
 Json Example for posting
 {
     "Amount": 65000,
@@ -39,10 +39,10 @@ Json Example for posting
 }
 
 Get a bid from id
-[this is the endpoint](https://localhost/4000/api/bid/{id})
+this is the endpoint (GET) http://localhost/4000/api/bid/{id}
 
 Get Version
-[this is the endpoint](https://localhost/4000/api/bid/version)
+this is the endpoint (GET) http://localhost/4000/api/bid/version
 
 # AuthService
 
@@ -51,7 +51,7 @@ Get Version
 ### Endpoint
 
 Post Login
-[this is the endpoint](https://localhost/4000/api/auth/login)
+this is the endpoint (POST) http://localhost/4000/api/auth/login
 Json Example for posting
 {
   "FirstName": "Michael",
@@ -67,7 +67,7 @@ Json Example for posting
 ### Endpoint
 
 Post an Item
-[this is the endpoint](http://localhost/4000/api/item/create)
+this is the endpoint (POST) http://localhost/4000/api/item/create
 Json Example for posting
 {
   "seller": "8426c7cd-8a91-4438-b55d-4fd7c13fbfbf",
@@ -79,19 +79,17 @@ Json Example for posting
 }
 
 Get a list of Items
-[this is the endpoint](http://localhost/4000/api/item/list)
+this is the endpoint (GET) http://localhost/4000/api/item/list
 
 Get an Item from id
-[this is the endpoint](http://localhost/4000/api/item/{id})
+this is the endpoint (GET) http://localhost/4000/api/item/{id}
 
 Post an Item Image
-[this is the endpoint](http://localhost/4000/api/item/uploadImage/{id})
-{
-  image.jpg
-}
+this is the endpoint (POST) http://localhost/4000/api/item/uploadImage/{id}
+use image file for posting 
 
 Get Version
-[this is the endpoint](http://localhost/4000/api/item/version)
+this is the endpoint (GET) http://localhost/4000/api/item/version
 
 # UserService
 
@@ -100,7 +98,7 @@ Get Version
 ### Endpoint
 
 Post an User
-[this is the endpoint](http://localhost/4000/api/user/create)
+this is the endpoint (POST) http://localhost/4000/api/user/create
 {
   "FirstName": "Michael",
   "LastName": "Sloth",
@@ -109,13 +107,13 @@ Post an User
 }
 
 Get a list of Users
-[this is the endpoint](http://localhost/4000/api/user/list)
+this is the endpoint (GET) http://localhost/4000/api/user/list)
 
 Get a User from id
-[this is the endpoint](http://localhost/4000/api/user/{id})
+this is the endpoint (GET) http://localhost/4000/api/user/{id})
 
 Delete a User with Id
-[this is the endpoint](http://localhost/4000/api/user/{id})
+this is the endpoint (DELETE) http://localhost/4000/api/user/{id}
 
 Get Version
-[this is the endpoint](http://localhost/4000/api/user/version)
+this is the endpoint (GET) http://localhost/4000/api/user/version
