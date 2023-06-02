@@ -1,12 +1,13 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Auction",
-    "description": "A product from Acme'scatalog",
+    "title": "Item",
+    "description": "An Item to be used in an auction",
     "type": "object",
     "properties": {
-      "id": {
-        "description": "The uniqueidentifierfor a product",
+      "Id": {
+        "description": "The uniqueidentifier for the item",
         "type": "string"
+    },
       },
       "Seller": {
         "description": "The seller who sells the item",
