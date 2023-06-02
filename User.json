@@ -1,37 +1,33 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Auction",
-    "description": "A product from Acme'scatalog",
+    "title": "User",
+    "description": "A User",
     "type": "object",
     "properties": {
-      "id": {
-        "description": "The uniqueidentifierfor a product",
+      "Id": {
+        "description": "The uniqueidentifier for the user",
         "type": "string"
       },
-      "Seller": {
-        "description": "The seller of the product",
-        "type": "object"
+      "FirstName": {
+        "description": "firstname of the user",
+        "type": "string"
       },
-      "Title": {
-          "description": "The title of the product",
+      "LastName": {
+          "description": "Lastname of the user",
           "type": "string"
       },
-      "Brand": {
-          "description": "The brand of the product",
+      "Email": {
+          "description": "Email of the user",
           "type": "string"
         },
-        "Description": {
-          "description": "The description of the product",
+        "PasswordHash": {
+          "description": "Hash of the password",
           "type": "string" 
         },
-        "Category": {
-            "description": "category of the product", 
-            "type": "object"
-        }, 
-        "Location":{
-          "description": "location of the product", 
-          "type": "string"
+        "PasswordSalt": {
+            "description": "Salt of the password", 
+            "type": "string"
         }
     },
-    "required": ["id", "firstname", "lastname", "email", "passwordhash", "passwordsalt", "mobilenuber"]
+    "required": ["Id", "FirstName", "LastName", "Email", "PasswordHash", "PasswordSalt"]
   }
