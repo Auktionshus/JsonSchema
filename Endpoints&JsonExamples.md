@@ -5,7 +5,7 @@
 ### Endpoint
 
 Post an auction
-[this is the endpoint](https://localhost/4000/api/auction/create)
+this is the endpoint: (POST) https://localhost/4000/api/auction/create
 Json Example for posting
 {
     "Item": "139c132e-6fd5-44b8-a543-55aaddf71080",
