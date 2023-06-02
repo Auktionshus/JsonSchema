@@ -7,7 +7,6 @@
       "Id": {
         "description": "The uniqueidentifier for the item",
         "type": "string"
-    },
       },
       "Seller": {
         "description": "An object of the seller of the item",
