@@ -10,9 +10,14 @@
     },
       },
       "Seller": {
-        "description": "The seller who sells the item",
+        "description": "An object of the seller of the item",
         "type": "object"
       },
+    
+      "Title": {
+          "description": "The title of the item",
+          "type": "string"
+        },
       "Brand": {
           "description": "The brand of the item",
           "type": "string"
@@ -22,18 +27,18 @@
           "type": "string"
       },
         "ImageFileId": {
-          "description": "The item has an image which gets an id",
+          "description": "The id of the items image",
           "type": "string" 
         },
         "Category":{
-            "description": "Category of item",
-            "type": "string"
+            "description": "Category of the item",
+            "type": "object"
         },
         "Location":{
-            "description": "Where item is located",
+            "description": "Where the item is located",
             "type": "string"
         }
   
     },
-    "required": ["id", "title", "brand", "description", "startingprice", "imagefileid", "category", "located", "user"]
+    "required": ["Id", "Title", "Brand", "Description", "Startingprice", "Imagefileid", "Category", "Located", "User"]
   }
