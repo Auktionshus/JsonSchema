@@ -12,7 +12,7 @@
       "description": "An object of the item in the auction",
       "type": "string"
     },
-    "HighsteBider": {
+    "HighsteBidder": {
         "description": "An object of user who gave the highst bid",
         "type": "string"
       },
@@ -36,5 +36,6 @@
         "description": "the current price of the auction",
         "type": "number"
       }
-  }
+  },
+  "required": ["Id", "Item", "HighestBidder", "Bids", "StartTime", "EndTime", "StartingPrice", "CurrentPrice"]
 }
