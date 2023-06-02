@@ -8,7 +8,7 @@
       "description": "The uniqueidentifier for the bid",
       "type": "string"
     },
-    "Bider": {
+    "Bidder": {
       "description": "An object of the User who made the bid",
       "type": "object"
     },
@@ -20,5 +20,6 @@
       "description": "date and time when the bid was placed",
       "type": "string"
     }
-  }
+  },
+  "required": ["Id", "Bidder", "Amount", "Date"]
 }
