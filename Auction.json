@@ -1,45 +1,40 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Auction",
-  "description": "A product from Acme'scatalog",
+  "description": "An Auction",
   "type": "object",
   "properties": {
-    "id": {
-      "description": "The uniqueidentifierfor a product",
+    "Id": {
+      "description": "The uniqueidentifier for the auction",
       "type": "string"
     },
     "Item": {
-      "description": "The name of the item",
+      "description": "An object of the item in the auction",
       "type": "string"
     },
     "HighsteBider": {
-        "description": "An object of user who give the highst bid",
+        "description": "An object of user who gave the highst bid",
         "type": "string"
       },
     "Bids": {
         "description": "array of bids",
         "type": "array"
     },
-    "CurrentPrice": {
-        "description": "Current price for Auction",
-        "type": "number"
-      },
-      "starttime": {
+      "StartTime": {
         "description": "the start time of the auction",
         "type": "string" 
       },
-      "endtime": {
+      "EndTime": {
         "description": "the end time of the auction",
         "type": "string"
       },
-      "startingprice": {
+      "StartingPice": {
         "description": "the start price of the auction",
         "type": "number"
       },
-      "currentprice": {
-        "description": "the currentprice of the auction",
+      "CurrentPrice": {
+        "description": "the current price of the auction",
         "type": "number"
       }
-  },
-  "required": ["id", "starttime","endtime", "startprice","currentprice", "bidhistory"]
+  }
 }
